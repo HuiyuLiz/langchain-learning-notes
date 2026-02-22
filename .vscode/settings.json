@@ -1,0 +1,30 @@
+{
+  // Python 格式化設置
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  // 通用編輯器設置
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  // Python 特定設置
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "workspace",
+
+  // uv 虛擬環境設置
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+
+  // Black 格式化器設置（新版擴展使用這個）
+  "black-formatter.args": [
+    "--line-length=88"
+  ],
+}
